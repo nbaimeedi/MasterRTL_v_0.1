@@ -62,6 +62,8 @@ Gcd, Microwatt.
   * Process the graph into a directed acyclic graph (DAG) by removing the loop of the registers ("timing/delay_propagation.py").
   * Conduct delay propagation for timing estimation ("timing/delay_propagate.py").
 
+```
+
 ### 4. Feature Extraction (folder: "feature_extract")
 
 ```
