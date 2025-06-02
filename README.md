@@ -4,33 +4,18 @@ Wenji Fang, Yao Lu, Shang Liu, Qijun Zhang, Ceyu Xu, Lisa Wu Wills, Hongce Zhang
 
 
 ## Collected Benchmarks
-All the RTL designs used in our work are collected from open-source projects, their links are attached below:
+All the RTL designs used in our work are collected from open-source projects (from Openroad-flow-scripts).
+https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
 
-1. IWLS05 (ISCAS89+ITC99)
-   ```
-   https://iwls.org/iwls2005/benchmarks.html
-   ```
-2. OpenCores
-   ```
-   https://opencores.org/
-   ```
-2. VexRiscv (generated with different configs)
-   ```
-   https://github.com/SpinalHDL/VexRiscv
-   ```
-3. NVDLA
-   ```
-   https://github.com/nvdla/hw
-   ```
-4. Chipyard (generated with different configs)
-   ```
-   https://github.com/ucb-bar/chipyard
-   ```
-5. RISC-V cores
-   ```
-   https://github.com/YosysHQ/picorv32
-   https://github.com/onchipuis/mriscvcore
-   ```
+Training DataSet:
+
+Riscv, Aes, Black Parrot, Spi, Uart and TinyRocket.
+
+Test Dataset:
+
+Gcd, Microwatt.
+
+
 
 ## Code Structure
 
