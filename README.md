@@ -99,6 +99,10 @@ Gcd, Microwatt.
    $ python3 infer.py
 ```
 
+### Note
+
+Label data is generated using Synopsys Design Compiler in the original paper. We used open-sourced tools like Yosys, ABC and OpenSTA for synthesis, area, power and timing extraction. The process can be found in /example/label/README.md
+
 ## Citation
 
 ```
