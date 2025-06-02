@@ -168,7 +168,8 @@ if __name__ == '__main__':
         #design_name = 'Uart'
         #design_name = 'Black_Parrot'
         #design_name = 'Spi'
-        design_name = 'Gcd'
+        #design_name = 'Gcd'
+        design_name = 'Microwatt'
         cmd = 'sog'
         out_path = '../../example/timing_dag/'
         run_one_design(design_name, cmd, out_path)

@@ -25,6 +25,7 @@ def load_data(label_tpe):
 
 
 def load_data_area(label_tpe):
+
     #design_name = 'TinyRocket'
     feat_dir = f'../../example/feature/'
 
@@ -50,7 +51,6 @@ def load_data_area(label_tpe):
     print("test_y:",test_y)
 
     return test_x, test_y
-
 
 def load_data_timing(label_tpe):
     #design_name = 'TinyRocket'
@@ -82,26 +82,32 @@ def load_data_timing(label_tpe):
 
 
 def load_data_power(label_tpe):
-    design_name = 'TinyRocket'
+    
+    #design_name = 'TinyRocket'
     feat_dir = f'../../example/feature/'
 
-    with open(f'{feat_dir}{design_name}_sog_vec_pwr.json', 'r') as f:
+    with open(f'{feat_dir}train_area.json', 'r') as f:
         feat_design_lst = json.load(f)
     test_feat_lst = []
     test_feat_lst.extend(feat_design_lst)
+    print("test_feat_lst:",test_feat_lst)
 
     label_dir = f'../../example/label/'
-    with open(f'{label_dir}{design_name}.json', 'r') as f:
+    with open(f'{label_dir}train_label.json', 'r') as f:
         label_dct = json.load(f)
-    label = label_dct[label_tpe]
-    test_label_lst = [label]
+    print("label_dct:",label_dct)    
+    #label = label_dct[label_tpe]
+    #test_label_lst = [label]
+    test_label_lst = [d[label_tpe] for d in label_dct]
+    print("test_label_lst:",test_label_lst)
 
-
-    test_x = np.array(test_feat_lst).reshape(1, -1)
+    test_x = np.array(test_feat_lst)
     test_y = np.array(test_label_lst)
 
-    return test_x, test_y
+    print("test_x:",test_x)
+    print("test_y:",test_y)
 
+    return test_x, test_y
 
 def draw_fig_kf(title, y_pred, y_test, method, train_test):
     pass

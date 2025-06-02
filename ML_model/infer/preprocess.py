@@ -25,13 +25,16 @@ def load_data_test(label_tpe):
 
 
 def load_data_area(label_tpe):
+
     #design_name = 'TinyRocket'
     #design_name = 'Aes'
     #design_name = 'Riscv'
     #design_name = 'Uart'
     #design_name = 'Black_Parrot'
     #design_name = 'Spi'
-    design_name = 'Gcd'
+    #design_name = 'Gcd'
+    design_name = 'Microwatt'
+
     feat_dir = f'../../example/feature/'
 
     with open(f'{feat_dir}{design_name}_sog_vec_area.json', 'r') as f:
@@ -51,7 +54,6 @@ def load_data_area(label_tpe):
 
     return test_x, test_y
 
-
 def load_data_timing(label_tpe):
     #design_name = 'TinyRocket'
     #design_name = 'Aes'
@@ -59,7 +61,9 @@ def load_data_timing(label_tpe):
     #design_name = 'Uart'
     #design_name = 'Black_Parrot'
     #design_name = 'Spi'
-    design_name = 'Gcd'
+    #design_name = 'Gcd'
+    design_name = 'Microwatt'
+
     feat_dir = f'../../example/feature/'
 
     with open(f'{feat_dir}{design_name}_sog_vec_timing.json', 'r') as f:
@@ -90,10 +94,20 @@ def load_data_timing(label_tpe):
 
 
 def load_data_power(label_tpe):
-    design_name = 'TinyRocket'
+
+
+    #design_name = 'TinyRocket'
+    #design_name = 'Aes'
+    #design_name = 'Riscv'
+    #design_name = 'Uart'
+    #design_name = 'Black_Parrot'
+    #design_name = 'Spi'
+    #design_name = 'Gcd'
+    design_name = 'Microwatt'
+
     feat_dir = f'../../example/feature/'
 
-    with open(f'{feat_dir}{design_name}_sog_vec_pwr.json', 'r') as f:
+    with open(f'{feat_dir}{design_name}_sog_vec_area.json', 'r') as f:
         feat_design_lst = json.load(f)
     test_feat_lst = []
     test_feat_lst.extend(feat_design_lst)
@@ -109,7 +123,6 @@ def load_data_power(label_tpe):
     test_y = np.array(test_label_lst)
 
     return test_x, test_y
-
 
 def draw_fig_kf(title, y_pred, y_test, method, train_test):
     pass

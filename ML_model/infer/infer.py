@@ -47,8 +47,8 @@ def calculate_r_mape_rrse(actual, predicted):
 if __name__ == '__main__':
     #ppa_tpe = "Area"
     #ppa_tpe = "TNS"
-    ppa_tpe = "WNS"
-    #ppa_tpe = "Power"
+    #ppa_tpe = "WNS"
+    ppa_tpe = "Power"
     model_name = f'../saved_model/xgboost_{ppa_tpe}_model.pkl'
     with open(model_name, 'rb') as f:
         model = pickle.load(f)    

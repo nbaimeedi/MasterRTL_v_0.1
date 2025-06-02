@@ -19,7 +19,8 @@ if __name__ == '__main__':
     #design_name = "Uart"
     #design_name = "Black_Parrot"
     #design_name = "Spi"
-    design_name = "Gcd"
+    #design_name = "Gcd"
+    design_name = "Microwatt"
 
     cmd = 'ast' ## for word-level
     cmd = 'sog' ## for bit-level

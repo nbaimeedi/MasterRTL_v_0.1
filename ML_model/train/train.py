@@ -12,9 +12,9 @@ def train(x_train, y_train):
 
 if __name__ == '__main__':
     #ppa_tpe = "Area"
-    ppa_tpe = "TNS"
+    #ppa_tpe = "TNS"
     #ppa_tpe = "WNS"
-    #ppa_tpe = "Power"
+    ppa_tpe = "Power"
 
 
 
